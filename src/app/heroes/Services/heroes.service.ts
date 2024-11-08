@@ -16,11 +16,15 @@ export class HeroesService {
   }
 
   getHerobyId(id: string) : Observable<Hero|undefined> {
-    return this.http.get<Hero>(`${this.baseUrl} /heroes/${id}`)
+    return this.http.get<Hero>(`${this.baseUrl}/heroes/${id}`)
       .pipe(
         catchError( error => of(undefined))
       )
 
+  }
+
+  getSuggestions(query : string) : Observable <Hero[]>{
+    return this.http.get<Hero[]>(`${this.baseUrl}/heroes?q=${query}&_limit=3`);
   }
 
 }
