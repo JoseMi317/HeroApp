@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -21,8 +21,7 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El",
-      "alt_img": "https://i1.wp.com/multiversitystatic.s3.amazonaws.com/uploads/2018/07/Superman-1.jpg?fit=1000%2C1538"
+      "characters": "Kal-El"
     },
     {
       "id": "dc-flash",
