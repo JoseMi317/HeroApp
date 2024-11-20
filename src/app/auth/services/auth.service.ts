@@ -28,7 +28,7 @@ login(email: string, password: string): Observable<User>{
   }
 
   checkAuth(): Observable<boolean>{
-    if(!localStorage.getItem('Item')) return of (false);
+    if(!localStorage.getItem('token')) return of (false);
 
     const token = localStorage.getItem('token');
 
